@@ -1,0 +1,81 @@
+{
+	"name" : "Asylum Town",
+	"description" : "Asylum Town remade from Ben in Apr. 2023",
+	
+	"author" : "just Ben Yan, no FF team any longer. BGM in Asylum was made by Heroes Orchestra."
+	"contact" : "http://forum.vcmi.eu/index.php",
+	"version" : "2.00",
+	"modType" : "Town",	
+	
+    "factions" : [ "config/asylum/town" ],
+	"depends" : ["stardust-terrain"], 
+	
+	"creatures" :
+	[
+		"config/asylum/creatures/darksquire.json",
+		"config/asylum/creatures/darkguard.json",
+		"config/asylum/creatures/winddancer.json",
+		"config/asylum/creatures/shadowdancer.json",
+		"config/asylum/creatures/shadowhunter.json",
+		"config/asylum/creatures/phantomhunter.json",
+		"config/asylum/creatures/sadphanton.json",
+		"config/asylum/creatures/sorrowphanton.json",
+		"config/asylum/creatures/spiritcrus.json",
+		"config/asylum/creatures/soulcrus.json",
+		"config/asylum/creatures/asnightmare.json",
+		"config/asylum/creatures/shadowmare.json",
+		"config/asylum/creatures/plwalker.json",
+		"config/asylum/creatures/voidwalker.json",
+		"config/asylum/creatures/jesterDeliver.json",
+		"config/asylum/creatures/acommander.json"
+	],
+	
+	"heroClasses" :
+	[
+		"config/asylum/classes/pathfinder.json",
+		"config/asylum/classes/mentalist.json"
+	],
+
+	"heroes" :
+	[
+		"config/asylum/heroes/A_alach.json",
+		"config/asylum/heroes/B_pauline.json",
+		"config/asylum/heroes/C_harker.json",
+		"config/asylum/heroes/D_sisElisa.json",
+		"config/asylum/heroes/E_renner.json",
+		"config/asylum/heroes/F_judith.json",
+		"config/asylum/heroes/G_stacia.json",
+		"config/asylum/heroes/H_karth.json",
+		"config/asylum/heroes/I_kaspar.json",
+		"config/asylum/heroes/J_mog.json",
+		"config/asylum/heroes/K_viola.json",
+		"config/asylum/heroes/L_brigid.json",
+		"config/asylum/heroes/M_mona.json",
+		"config/asylum/heroes/N_jezebel.json",
+		"config/asylum/heroes/O_margareta.json",
+		"config/asylum/heroes/P_lynn.json",
+//		"config/asylum/classes/campaignHeroes.json"
+	],
+	 "objects":
+    [
+		"config/asylum/dwellings.json"
+    ],
+	"spells" :
+	[
+		"config/asylum/NewOldSpells/terrorEye.json",
+		"config/asylum/NewOldSpells/birthdayGift.json",
+		"config/asylum/NewOldSpells/summonJester.json",
+		"config/asylum/NewOldSpells/summonApps.json",
+		"config/asylum/NewOldSpells/seduce.json"
+	],
+	"changelog" :
+    {
+        "2.00"	: [ "Add stardust terrian for Asylum. New BGM for stardust which was made by myself" ],
+		"1.50"	: [ "Some new partitions" ],
+		"1.20"	 : [ "Small fixes and a spell Gift Delivery for my 30th birthday, original name is Birthday Gift"],
+		"1.10"   : [ "Small fixes" ],
+		"1.02"   : [ "Upgaded graphic", "Hero males and female sprites on the battlefields", "Small fixes" ],
+		"1.01"   : [ "Added new commander", "New puzzle by acidchalk", "Bug fixes" ],
+		"1.00"   : [ "Initial release" ]
+    }
+}

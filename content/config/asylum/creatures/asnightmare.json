@@ -1,0 +1,136 @@
+{
+  "asnightmare": {
+    "name": {
+      "plural": "Nightmares",
+      "singular": "Nightmare"
+    },
+    "advMapAmount": {
+ "max" : 12,
+ "min" : 5
+    },
+    "faction": "asylum",
+    "aiValue": 1438,
+    "attack": 16,
+    "cost": {
+      "gold": 1000
+    },
+    "damage": {
+ "max" : 19,
+ "min" : 15
+    },
+    "defense": 17,
+    "fightValue": 1255,
+    "graphics": {
+      "animation": "asylum/battle/creatures/CPST6.def",
+      "map": "asylum/map/creatures/AVWC187.def",
+      "iconSmall": "asylum/iconsSmall/creatures/CPRS187Y.bmp",
+      "iconLarge": "asylum/iconsBig/creatures/CPRL187Y.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.25,
+        "attack": 1,
+        "idle": 10
+      }
+    },
+    "doubleWide": true,
+    "growth": 2,
+    "hitPoints": 80,
+    "level": 6,
+    "upgrades": [
+      "shadowmare"
+    ],
+    "sound": {
+      "attack": "asylum/CPS6ATTK.wav",
+      "defend": "asylum/CPS6DFND.wav",
+      "killed": "asylum/CPS6KILL.wav",
+      "move": "asylum/CPS6MOVE.wav",
+      "wince": "asylum/CPS6WNCE.wav"
+    },
+    "speed": 8,
+    "abilities": {
+      "noMorale": {
+        "type": "NO_MORALE"
+      },
+      "noMind": {
+        "type": "MIND_IMMUNITY"
+      }
+    },
+		"stackExperience" :
+ 
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : 0,
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 4, 5, 6, 7, 8, 9 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : 1,
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 7, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : 2,
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : 1,
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" : 
+				{ 
+					"subtype" : 0, 
+					"type" : "DEATH_STARE" 
+				},
+				"values" : [ 12, 14, 16, 18, 20, 22, 24, 26, 28, 30 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ADDITIONAL_RETALIATION"
+				},
+				"values" : [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "FEAR"
+				},
+				"values" : [ false, false, false, false, false, false, true, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+					
+					"type" : "SPELL_BEFORE_ATTACK",
+					"subtype" : 24, //"spell.deathRipple", //deathRipple
+					"addInfo" : 1000
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			}
+		]
+  }	
+	}

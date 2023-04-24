@@ -1,0 +1,184 @@
+{
+  "shadowdancer": {
+    "name": {
+      "plural": "Shadow Dancers",
+      "singular": "Shadow Dancer"
+    },
+    "advMapAmount": {
+ "max" : 25,
+ "min" : 16
+    },
+    "faction": "asylum",
+    "aiValue": 280,
+    "attack": 6,
+    "cost": {
+      "gold": 140
+    },
+    "damage": {
+ "max" : 3,
+ "min" : 2
+    },
+    "defense": 5,
+    "fightValue": 286,
+    "graphics": {
+      "animation": "asylum/battle/creatures/CPST2U.def",
+      "map": "asylum/map/creatures/AVWC180.def",
+      "iconSmall": "asylum/iconsSmall/creatures/CPRS180Y.bmp",
+      "iconLarge": "asylum/iconsBig/creatures/CPRL180Y.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.25,
+        "attack": 1,
+        "idle": 10
+      }
+    },
+    "growth": 9,
+    "hitPoints": 16,
+    "level": 2,
+    "sound": {
+      "attack": "asylum/CPU2ATTK.wav",
+      "defend": "asylum/CPU2DFND.wav",
+      "killed": "asylum/CPU2KILL.wav",
+      "move": "asylum/CPU2MOVE.wav",
+      "wince": "asylum/CPU2WNCE.wav"
+    },
+    "speed": 9,
+    "abilities": {
+      "noMorale": {
+        "type": "NO_MORALE"
+      },
+      "noMind": {
+        "type": "MIND_IMMUNITY"
+      },
+      "multiAttack": {
+        "type": "THREE_HEADED_ATTACK"
+         //No back attack skills for shadow dancers
+      }
+    },
+    "stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : 0,
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 2, 3, 3, 3, 4 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : 1,
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 1, 2, 2, 3, 3, 3, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : 2,
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 1, 2, 2, 2, 3, 3, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : 1,
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 2, 2, 3, 3, 3 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : 0 
+				},
+				"values" : [ 0, 0, 20, 20, 30, 30, 40, 40, 50, 60 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : 1 
+				},
+				"values" : [ 0, 0, 20, 20, 30, 30, 40, 40, 50, 60 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : 2 
+				},
+				"values" : [ 0, 0, 20, 20, 30, 30, 40, 40, 50, 60 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : 3 
+				},
+				"values" : [ 0, 0, 20, 20, 30, 30, 40, 40, 50, 60 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : 6 
+				},
+				"values" : [ 0, 0, 20, 20, 30, 30, 40, 40, 50, 60 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : 7 
+				},
+				"values" : [ 0, 0, 20, 20, 30, 30, 40, 40, 50, 60 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : 8 
+				},
+				"values" : [ 0, 0, 20, 20, 30, 30, 40, 40, 50, 60 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : 9 
+				},
+				"values" : [ 0, 0, 20, 20, 30, 30, 40, 40, 50, 60 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : 71, //"spell.poison",
+					"addInfo" : [1, 1]
+				},
+				"values" : [ 3, 6, 9, 12, 15, 18, 21, 24, 27, 30 ]				
+			},
+			{
+				"bonus" :
+				{
+					"type" : "GENERAL_ATTACK_REDUCTION",
+					"subtype" : 1
+				},
+				"values" : [ 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1 ]
+			}
+		]
+  }	
+	}

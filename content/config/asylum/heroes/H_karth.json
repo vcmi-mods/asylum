@@ -1,0 +1,72 @@
+{
+	"h_karth" :
+	{
+    "class": "pathfinder",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "Karth",
+			"biography" : "Karth sees conspiracies everywhere and is too tactless to keep them to himself. Once he accused Queen Catherine of being a spy.  He was immediately transferred to a border town, and then he learned the power of psychic spells, he supposes that he can caught anyone's heart.",
+			"specialty" :
+			{
+				"description" : "{Logistics}\r\n\r\nReceives a 5% per level bonus to Logistics skill percentage.",
+				"tooltip" : "Secondary skill bonus: Logistics",
+				"name" : "Logistics"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "asylum/heroes/karth/UN32T203.bmp",
+			"specialtyLarge" : "asylum/heroes/karth/UN44T203.bmp",
+			"large" : "asylum/heroes/karth/HPL007PF.bmp",
+			"small" : "asylum/heroes/karth/HPS007PF.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "darksquire",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "winddancer",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "shadowhunter",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "estates"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"logistics" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"subtype" : 1,
+					"type" : "MOVEMENT",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
+	}
+}
+
